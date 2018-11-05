@@ -9,6 +9,10 @@ body
 	color: $black
 	-webkit-font-smoothing: antialiased
 
+//.debug
+	//+debug(rgba(255, 255, 255, 0.3), yellow)
+	//z-index: 100
+
 section
 	position: relative
 	padding: 60px 0
@@ -32,3 +36,8 @@ h1, h2, h3, h4, h5
 a
 	color: #000
 	text-decoration: none
+.container
+	+minMax(320px,1920px,0)
+.wrap
+	+minMax(320px, 1200px, 15px)
+

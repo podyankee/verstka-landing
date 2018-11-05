@@ -1,2 +1,29 @@
-header.header
-    h1 hello  my site
+.container#top
+	.section-wrap
+		.section-top
+			.wrap
+				.section-top__header
+					.section-top-logo.logo
+						img(src="assets/img/logo.png", alt="alt")
+					.section-top__menu.menu
+						ul.section-top__menu-list
+							+headerNavLinkActive("#top", "Home")
+							+headerNavLink("#about", "About Us")
+							+headerNavLink("#portfolio", "Portfolio")
+							+headerNavLink("#pricing", "Pricing")
+							+headerNavLink("#team", "Team")
+							+headerNavLink("#blog", "Blog")
+							+headerNavLink("#contact", "Contact")
+				.section-top__info
+					h1 Our clients are our first priority #[span Welcome to Bino]
+					.devider
+						p
+					p Monotonectally fabricate next-generation results whereas scalable e-business. Dramatically negotiate distributed potentialities with global content. Proactively seize leveraged materials without stand-alone users. Quickly restore customer directed.
+					.buttons
+						a(href="#") Get started now
+						a(href="#") Learn more
+		.section-wrap__icon
+			a(href="#")
+				+icon("icon1", "section-wrap__img")
+				
+						

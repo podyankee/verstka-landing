@@ -107,4 +107,65 @@
 	&:hover
 		background-color: lighten($bg, 15%)
 
-        
+@mixin button($bg: $red, $two-button: false)
+	width: 225px
+	border-radius: 3px
+	background-color: $bg
+	border: 2px solid $bg
+	box-shadow: 0 2px 5px rgba(0,0,0,0.25)
+	+rem(14px)
+	font-weight: 700
+	line-height: 16px
+	letter-spacing: 0.14px
+	display: inline-block
+	text-align: center
+	text-transform: uppercase
+	color: $white
+	padding: 18px 0
+	box-sizing: border-box
+	transition: $trs
+	@content
+	@if $two-button == true
+		&:first-child
+			margin-right: 25px
+		&:last-child
+			background-color: transparent
+			border-color: $white
+	&:hover
+		&:last-child
+			background-color: transparent
+			border-color: $red
+
+
+@mixin minMax($min-width, $max-width, $padding) 
+	min-width: $min-width
+	max-width: $max-width
+	padding: 0 $padding
+	box-sizing: border-box
+	margin: 0 auto
+
+@mixin devider($color-line: $white-gray)
+	display: block
+	width: 7px
+	position: relative
+	margin: 20px auto
+	p
+		text-align: center
+		&:after
+			content: ''
+			+dem(7px)
+			background-color: $red
+			display: block
+			border-radius: 50%
+	&::before, &::after
+		content: ''
+		+dem(80px, 1px)
+		background-color: $color-line
+		display: block
+		position: absolute
+		top: 50%
+		transform: translateY(-1px)
+	&::before
+		left: -90px
+	&::after
+		right: -90px
