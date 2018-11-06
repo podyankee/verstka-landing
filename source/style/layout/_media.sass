@@ -10,7 +10,9 @@
 					font-size: 42px
 	.section-top__menu-link
 		padding: 0
-		
+	.section__advantages
+		padding-bottom: 50px
+		margin-bottom: 50px
 @media(max-width: 768px)
 	.section-top
 		.section-top__header
@@ -30,6 +32,8 @@
 		border-bottom: none
 		&:hover
 			border-bottom: none
+	.advantages__element
+		+size(6)
 @media(max-width: 560px)
 	.buttons
 		a
@@ -41,4 +45,6 @@
 		ul
 			justify-content: center
 		
-		
+@media(max-width: 480px)
+	.advantages__element
+		+size(12)

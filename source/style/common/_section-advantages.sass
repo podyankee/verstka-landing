@@ -1,0 +1,70 @@
+.section__advantages
+	border-bottom: 1px solid $advantages-line
+	padding-top: 0
+	padding-bottom: 60px
+	margin-bottom: 140px
+.advantages
+	&__block
+		+row-flex
+	&__element
+		+col
+		+size(3)
+		margin-top: 20px
+		margin-bottom: 20px
+		text-align: center
+	&__icon
+		+dem(73px)
+		border: 1px solid $advantages-border-gray
+		position: relative
+		margin: 20px auto
+		transition: $trs
+		img, svg
+			+absolute-center
+			fill: $red
+.advantages__img1
+	+dem(32px, 12px)
+.advantages__img2
+	+dem(27px, 23px)
+.advantages__img3
+	+dem(30px, 35px)
+.advantages__img4
+	+dem(25px, 25px)
+.advantages__element
+	transition: $trs
+	p
+		font-family: $secondary-font
+		font-weight: 300
+		+rem(12px)
+		line-height: 20px
+		letter-spacing: 0.9px
+		margin: 15px 0
+		color: $advantages-gray
+p.advantages__title
+	font-family: $default-font
+	font-weight: 600
+	text-transform: uppercase
+	color: $gray
+	+rem(18px)
+	line-height: 20px
+	letter-spacing: 1.35px
+	transition: $trs
+	&::after
+		content: ''
+		width: 41px
+		height: 1px
+		background-color: #888
+		border-bottom: 1px solid #e1e1e1
+		display: block
+		margin: 15px auto
+.advantages__element
+	&:hover
+		p.advantages__title
+			color: $red
+		.advantages__icon
+			transform: rotate(45deg)
+			border-color: $red
+			img, svg
+				transform: translate(-50%, -50%) rotate(-45deg)
+		
+
+
