@@ -1,0 +1,70 @@
+.section__service
+	padding: 150px 0
+	background: $service-bg
+	&::after
+		content: ''
+		width: 46%
+		height: 100%
+		display: block
+		background: url('../img/services-bg.jpg') right top no-repeat
+		background-size: cover
+		position: absolute
+		right: 0
+		top: 0
+.service__block
+	width: 54%
+	text-align: right
+.service__title
+	+rem(36px)
+	line-height: 36px
+	color: $white-gray
+	letter-spacing: 3.6px
+	text-transform: uppercase
+	font-weight: 700
+	font-family: $secondary-font
+	padding-right: 25px
+	border-right: 6px solid $red
+	margin-right: 80px
+	margin-bottom: 30px
+.service__element
+	max-width: 665px
+	margin: 55px 80px 55px auto
+	position: relative
+	&:last-child
+		margin-bottom: 0
+	p
+		+rem(14px)
+		line-height: 29px
+		color: $advantages-gray
+		ff$secondary-font
+		&:first-of-type
+			text-transform: uppercase
+			color: $red
+			font-family: $default-font
+			font-weight: 600
+			font-size: 18px
+.service__icon
+	+dem(64px)
+	border: 5px solid rgba(0,0,0, 0.25)
+	position: absolute
+	right: -117px
+	top: 50%
+	transform: translate(0, -50%)
+	z-index: 1
+	border-radius: 50%
+	background-color: $white-gray
+	img, svg
+		fill: $red
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%, -50%)
+.service__img1
+	width: 27px
+	height: 27px
+.service__img2
+	width: 35px
+	height: 29px
+.service__img3
+	width: 35px
+	height: 30px

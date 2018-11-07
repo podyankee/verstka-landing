@@ -17,6 +17,9 @@
 		margin-bottom: 50px
 	.history__left
 		align-self: center
+	.section__service
+		margin: 50px 0
+		padding: 50px 0
 @media(max-width: 768px)
 	.section-top
 		.section-top__header
@@ -38,6 +41,26 @@
 			border-bottom: none
 	.advantages__element
 		+size(6)
+	.section__service
+		padding-left: 15px
+		padding-right: 15px
+		&::after
+			display: none
+		.service__block
+			width: 100%
+			text-align: left
+		.service__title
+			padding-right: 0
+			padding-left: 25px
+			border-right: 0
+			border-left: 6px solid $red
+		.service__element
+			max-width: 100%
+			margin: 25px 0
+			padding-right: 80px
+			box-sizing: border-box
+			.service__icon
+				right: 0
 @media(max-width: 680px)
 	.history__left, .history__right
 		+size(12)
