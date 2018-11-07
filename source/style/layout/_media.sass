@@ -13,6 +13,10 @@
 	.section__advantages
 		padding-bottom: 50px
 		margin-bottom: 50px
+	.section__history
+		margin-bottom: 50px
+	.history__left
+		align-self: center
 @media(max-width: 768px)
 	.section-top
 		.section-top__header
@@ -34,6 +38,14 @@
 			border-bottom: none
 	.advantages__element
 		+size(6)
+@media(max-width: 680px)
+	.history__left, .history__right
+		+size(12)
+	.history__left
+		img
+			margin: 0 auto 30px
+	.history__right
+		text-align: center
 @media(max-width: 560px)
 	.buttons
 		a
