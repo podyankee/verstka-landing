@@ -20,6 +20,15 @@
 	.section__service
 		margin: 50px 0
 		padding: 50px 0
+.section__resent
+	padding-top: 0
+	margin-top: 50px
+.resent__element
+	p
+		bottom: 10px
+		span
+			&:first-child
+				+rem(18px)
 @media(max-width: 768px)
 	.section-top
 		.section-top__header
@@ -61,6 +70,8 @@
 			box-sizing: border-box
 			.service__icon
 				right: 0
+	.resent__element
+		flex-basis: 50%
 @media(max-width: 680px)
 	.history__left, .history__right
 		+size(12)
@@ -83,3 +94,5 @@
 @media(max-width: 480px)
 	.advantages__element
 		+size(12)
+	.resent__element
+		flex-basis: 100%

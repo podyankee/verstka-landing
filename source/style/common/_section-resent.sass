@@ -1,0 +1,85 @@
+.section__resent
+	margin: 80px 0 0 0
+	padding-bottom: 0
+	> p
+		+rem(14px)
+		line-height: 29px
+		margin: 20px 0
+		text-align: center
+		color: $advantages-gray
+.resent__devider
+	+devider($advantages-gray)
+p.resent__title
+	color: $gray
+	+rem(36px)
+	letter-spacing: 3.6px
+	font-family: $secondary-font
+	font-weight: 700
+	text-transform: uppercase
+.resent__links
+	margin: 40px 0
+	text-align: center
+	color: $advantages-gray
+	a
+		+rem(14px)
+		color: $advantages-gray
+		display: inline-block
+		margin: 5px 19px
+		transition: $trs
+		&:hover
+			color: $red
+.resent__block
+	display: flex
+	flex-wrap: wrap
+	margin: 40px auto 0
+.resent__element
+	flex-basis: 25%
+	position: relative
+	img
+		display: block
+		max-width: 100%
+	a
+		display: block
+		max-width: 100%
+		&:hover
+			&:after
+				opacity: 1
+			p
+				opacity: 1
+		&:after
+			content: ''
+			+dem(100%)
+			position: absolute
+			left: 0
+			top: 0
+			background-color: rgba(231, 76, 60, 0.8)
+			opacity: 0
+			transition: $trs
+		p
+			position: absolute
+			left: 10%
+			bottom: 35px
+			z-index: 1
+			color: $white
+			opacity: 0
+			transition: $trs
+			&::before
+				content: ''
+				width: 44px
+				height: 4px
+				background-color: $white
+				margin-bottom: 25px
+				display: block
+			span
+				display: block
+				margin: 15px 0
+				+rem(14px)
+				letter-spacing: 0.7px
+				&:first-child
+					text-transform: uppercase
+					font-family: $secondary-font
+					+rem(24px)
+					font-weight: 600
+					letter-spacing: 1.2px
+
+
