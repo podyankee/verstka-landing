@@ -2,6 +2,8 @@
 	.section-top__menu-link
 		padding: 10px
 @media(max-width: 980px)
+	section
+		padding: 50px 0
 	.section-top
 		.section-top__info
 			padding-top: 50px
@@ -59,7 +61,7 @@
 		&:hover
 			border-bottom: none
 	.advantages__element
-		+size(6)
+		+size(12)
 	.section__service
 		padding-left: 15px
 		padding-right: 15px
@@ -89,10 +91,17 @@
 			padding: 20px
 		&__right
 			margin-top: 30px
+	.counts__block
+		justify-content: center
+	.counts__element
+		+size(12)
+		margin-bottom: 30px
+		&:last-child
+			margin-bottom: 0
 
 @media(max-width: 680px)
 	.history__left, .history__right
-		+size(12)
+		+size(24)
 	.history__left
 		img
 			margin: 0 auto 30px
@@ -111,6 +120,8 @@
 		
 @media(max-width: 480px)
 	.advantages__element
-		+size(12)
+		+size(24)
 	.resent__element
 		flex-basis: 100%
+	.counts__element
+		+size(24)
