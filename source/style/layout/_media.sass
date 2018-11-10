@@ -98,7 +98,10 @@
 		margin-bottom: 30px
 		&:last-child
 			margin-bottom: 0
-
+	.price__block
+		justify-content: center
+	.price__element
+		+size(12)
 @media(max-width: 680px)
 	.history__left, .history__right
 		+size(24)
@@ -107,6 +110,9 @@
 			margin: 0 auto 30px
 	.history__right
 		text-align: center
+@media(max-width: 580px)
+	.price__element
+		+size(24)
 @media(max-width: 560px)
 	.buttons
 		a
