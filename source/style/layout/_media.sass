@@ -20,15 +20,25 @@
 	.section__service
 		margin: 50px 0
 		padding: 50px 0
-.section__resent
-	padding-top: 0
-	margin-top: 50px
-.resent__element
-	p
-		bottom: 10px
-		span
-			&:first-child
-				+rem(18px)
+	.section__resent
+		padding-top: 0
+		margin-top: 50px
+	.resent__element
+		p
+			bottom: 10px
+			span
+				&:first-child
+					+rem(18px)
+	.case-study
+		padding: 50px 0
+		&__left
+			flex-basis: 50%
+			padding: 30px
+		&__right
+			flex-basis: 50%
+			img
+				max-width: 100%
+				margin-left: 0
 @media(max-width: 768px)
 	.section-top
 		.section-top__header
@@ -72,6 +82,14 @@
 				right: 0
 	.resent__element
 		flex-basis: 50%
+	.case-study
+		&__block
+			flex-direction: column
+		&__left
+			padding: 20px
+		&__right
+			margin-top: 30px
+
 @media(max-width: 680px)
 	.history__left, .history__right
 		+size(12)

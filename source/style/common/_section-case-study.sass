@@ -1,0 +1,80 @@
+.case-study
+	background-color: $white-gray
+	padding: 140px 0
+	p
+		+rem(14px)
+		line-height: 29px
+		margin: 20px 0
+		text-align: center
+		color: $advantages-gray
+.case-study__devider
+	+devider($advantages-gray)
+p.case-study__title
+	color: $gray
+	+rem(36px)
+	letter-spacing: 3.6px
+	font-family: $secondary-font
+	font-weight: 700
+	text-transform: uppercase
+.case-study__block
+	margin-top: 60px
+	display: flex
+	align-items: center
+.case-study__left
+	flex-basis: 665px
+	position: relative
+	z-index: 1
+.case-study__right
+	img
+		margin-left: -80px
+.ideas
+	background-color: $white
+	box-shadow: 0 3px  5px rgba(0,0,0,0.1)
+	padding: 30px 50px 80px
+	box-sizing: border-box
+	&__icon
+		+dem(127px)
+		background-color: $red
+		margin: 50px auto
+		position: relative
+		clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%)
+		img, svg
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%, -50%)
+		.ideas__img
+			fill: $white
+			+dem(35px, 40px)
+	p
+		+rem(14px)
+		line-height: 24px
+		color: $advantages-gray
+		font-family: $secondary-font
+		font-weight: 300
+		letter-spacing: 1.05px
+p.ideas__title
+	+rem(18px)
+	font-weight: 600
+	color: $gray
+	letter-spacing: 1.35px
+	text-transform: uppercase
+	&::after
+		content: ''
+		+dem(41px, 1px)
+		background: #888
+		border-bottom: 1px solid #e1e1e1
+		display: block
+		margin: 20px auto 0
+.ideas__btn
+	+btn
+		width: 145px
+		+rem(12px)
+		letter-spacing: 0.12px
+		padding: 13px 0
+		display: block
+		background-color: $red
+		border-radius: 2px
+		margin: 30px auto
+		line-height: 16px
+		font-weight: 600
