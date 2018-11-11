@@ -65,6 +65,12 @@
 	.team
 		padding-top: 50px
 		padding-bottom: 50px
+	.integrations
+		padding: 50px 0
+	.integrations__block
+		justify-content: center
+	.integrations__element
+		+size(8)
 @media(max-width: 768px)
 	.section-top
 		.section-top__header
@@ -131,6 +137,9 @@
 	.team
 		.team__man
 			flex-basis: 45%
+	.integrations__element
+		+size(12)
+		margin: 7.5px
 @media(max-width: 680px)
 	.history__left, .history__right
 		+size(24)
@@ -163,3 +172,5 @@
 	.team
 		.team__man
 			flex-basis: 100%
+	.integrations__element
+		+size(24)
