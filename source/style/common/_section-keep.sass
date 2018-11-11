@@ -1,0 +1,110 @@
+.keep
+	background-color: $white-gray
+	padding: 140px 0
+	p
+		+rem(14px)
+		line-height: 29px
+		margin: 20px 0
+		text-align: center
+		color: $advantages-gray
+.keep__devider
+	+devider($advantages-gray)
+p.keep__title
+	color: $gray
+	+rem(36px)
+	letter-spacing: 3.6px
+	font-family: $secondary-font
+	font-weight: 700
+	text-transform: uppercase
+.keep__block
+	+row-flex
+	margin-top: 60px
+.keep__left
+	+col
+	+size(10)
+	background-color: $white
+	box-shadow: 0 3px 5px rgba(0,0,0,0.1)
+	border-radius: 2px 5px
+	padding: 30px 95px
+	box-sizing: border-box
+.keep__right
+	+col
+	+size(14)
+	background-color: $white
+	box-shadow: 0 3px 5px rgba(0,0,0,0.1)
+	border-radius: 3px 5px
+	padding: 0 95px
+	box-sizing: border-box
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+.keep__form
+	flex-basis: 100%
+.keep__info
+	margin: 55px 0
+	p
+		text-align: left
+		color: $advantages-gray
+		+rem(18px)
+		line-height: 24px
+		margin: 20px 0
+		&:first-child
+			+rem(24px)
+			line-height: 24px
+			font-weight: 600
+			font-family: $secondary-font
+			color: $red
+			text-transform: uppercase
+	a
+		text-align: left
+		color: $advantages-gray
+		+rem(18px)
+		line-height: 24px
+.keep__input, .keep__textarea
+	position: relative
+	margin: 20px 0
+	input, textarea
+		color: $advantages-gray
+		+rem(14px)
+		line-height: 24px
+		width: 100%
+		font-weight: 600
+		border: none
+		border-bottom: 1px solid $advantages-border-gray
+		padding: 7px 0
+		box-shadow: none
+		outline: none
+		&:focus + label, &:valid + label
+			transform: translateY(-9px)
+			+rem(12px)
+	textarea
+		resize: none
+		outline: none
+		height: 100px
+	label
+		color: $advantages-gray
+		+rem(14px)
+		line-height: 24px
+		width: 100%
+		position: absolute
+		pointer-evevnt: none
+		left: 0
+		top: 5px
+		white-space: nowrap
+		overflow: hidden
+		text-overflow: ellipsis
+		transition-duration: 200ms
+.keep__button
+	margin: 25px 0
+	button
+		+button
+		cursor: pointer
+		width: 157px
+		padding: 14px 0
+
+
+
+
+
+
+
