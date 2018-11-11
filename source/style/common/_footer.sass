@@ -5,9 +5,10 @@
 	+dem(30px)
 	fill: $advantages-gray
 	transition: $trs
-.wrapper
-	display: flex
-	flex-wrap: wrap
+.footer
+	.wrapper
+		display: flex
+		flex-wrap: wrap
 .footer__left
 	margin-right: auto
 .socials
@@ -30,3 +31,21 @@
 		color: $advantages-gray
 		font-weight: 600
 	
+.arrow-up
+	+dem(53px)
+	box-shadow: 0 3px 5px rgba(0,0,0,0.25)
+	position: fixed
+	right: 30px
+	bottom: 30px
+	background-color: $red
+	border-radius: 50%
+	cursor: pointer
+	z-index: 10
+	a
+		display: block
+		+dem(100%)
+	img, svg
+		+absolute-center
+	.arrow-up__img
+		+dem(12px)
+		fill: $white
