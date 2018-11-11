@@ -1,0 +1,31 @@
+.free
+	background: url('../img/free-bg.jpg') center no-repeat
+	background-size: cover
+	padding: 140px 0
+	text-align: center
+	position: relative
+	&::after
+		content: ''
+		+dem(100%)
+		position: absolute
+		left: 0
+		top: 0
+		background-color: rgba(0,0,0,0.6)
+		display: block
+		z-index: 1
+	.wrapper
+		position: relative
+		z-index: 2
+	p
+		color: $white
+		+rem(18px)
+		line-height: 36px
+		margin: 12px 0
+		span
+			font-weight: 600
+	.free__title
+		+rem(36px)
+		text-transform: capitalize
+.free__btn
+	+button()
+	margin-top: 55px
