@@ -19,6 +19,9 @@
 	.team__info
 		position: static
 		opacity: 1
+	.blog
+		.blog__text
+			padding: 20px 15px
 @media(max-width: 1120px)
 	.section-top__menu-link
 		padding: 10px
@@ -71,6 +74,33 @@
 		justify-content: center
 	.integrations__element
 		+size(8)
+	.blog
+		padding: 50px 0
+		.blog__element
+			flex-basis: 100%
+			.blog__img
+				img
+					width: 100%
+			&:nth-child(odd)
+				.blog__img
+					order: 2
+				.blog__text
+					order: 1
+					&::before
+						right: -55px
+						left: auto
+						border: 30px solid transparent
+						border-left: 25px solid $red
+			&:nth-child(even)
+				.blog__img
+					order: 1
+				.blog__text
+					order: 2
+					&::before
+						right: auto
+						left: -55px
+						border: 30px solid transparent
+						border-right: 25px solid $red
 @media(max-width: 768px)
 	.section-top
 		.section-top__header
@@ -151,6 +181,22 @@
 @media(max-width: 580px)
 	.price__element
 		+size(24)
+	.blog
+		.blog__element
+			&:nth-child(odd), &:nth-child(even)
+				.blog__img
+					order: 1
+					flex-basis: 100%
+					img
+						width: auto
+						max-width: 100%
+						margin: 0 auto
+						height: auto
+				.blog__text
+					order: 2
+					flex-basis: 100%
+					&::before
+						display: none
 @media(max-width: 560px)
 	.buttons
 		a
